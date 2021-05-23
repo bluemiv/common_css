@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+:root {
+  --primary-color: #339af0;
+  --primary-hover-color: #74c0fc;
+  --secondary-color: #e64980;
+  --secondary-hover-color: #f783ac;
+  --white-color: #ffffff;
+  --gray-color1: #d9d9d9;
+}
+
+/* Button */
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 8px 13px;
+  margin: 0;
+  border-radius: 0;
+}
+.btn:hover {
+  cursor: pointer;
+}
+/* Button Size */
+.btn-sm {
+  font-size: 12px;
+}
+.btn-md {
+  font-size: 14px;
+}
+.btn-lg {
+  font-size: 18px;
+}
+/* Button Style */
+.btn-default {
+  background-color: var(--white-color);
+  border: 1px solid var(--gray-color1);
+}
+.btn-default:hover {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--white-color);
+}
+.btn-primary:hover {
+  background-color: var(--primary-hover-color);
+  border: 1px solid var(--primary-hover-color);
+  transition: all 0.2s ease-in-out;
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--white-color);
+}
+.btn-secondary:hover {
+  background-color: var(--secondary-hover-color);
+  border: 1px solid var(--secondary-hover-color);
+  transition: all 0.2s ease-in-out;
+}
+/* Button Group */
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn-group > button:first-child {
+  margin-left: 0;
+}
+.btn-group > button {
+  margin-left: -1px;
+}
+.btn-group > .btn-primary:first-child:hover {
+  border-left-color: var(--primary-hover-color);
+}
+.btn-group > .btn-primary {
+  border-left-color: var(--primary-hover-color);
+}
+.btn-group > .btn-secondary:first-child:hover {
+  border-left-color: var(--secondary-hover-color);
+}
+.btn-group > .btn-secondary {
+  border-left-color: var(--secondary-hover-color);
+}
+.btn-group > .btn-default:first-child {
+  border-left: 1px solid var(--gray-color1);
+}
+.btn-group > .btn-default:hover {
+  border: 1px solid var(--primary-color);
+  z-index: 1;
+}
+.btn-radius {
+  border-radius: 18px;
+}
