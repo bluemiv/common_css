@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+/* Naver 마루부리 폰트 */
+@font-face {
+  font-family: "MaruBuri-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* CSS 초기화 코드
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -134,6 +143,12 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* 폰트 설정 */
+html,
+body {
+  font-family: "MaruBuri-Regular";
 }
 
 /*********/
