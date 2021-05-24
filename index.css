@@ -389,7 +389,8 @@ body {
 /** Divide */
 /* Divide Style */
 .divide,
-.divide-dash {
+.divide-dash,
+.divide-dot {
   display: block;
   content: "";
   margin: 20px 0;
@@ -399,4 +400,7 @@ body {
 }
 .divide-dash {
   border-bottom: 1px dashed var(--gray-color1);
+}
+.divide-dot {
+  border-bottom: 1px dotted var(--gray-color1);
 }
