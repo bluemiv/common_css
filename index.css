@@ -1,6 +1,8 @@
 @charset "utf-8";
 
-/* Naver 마루부리 폰트 */
+/** Naver 마루부리 폰트
+    라이선스 전문: https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=3497
+*/
 @font-face {
   font-family: "MaruBuri-Regular";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff")
@@ -9,7 +11,7 @@
   font-style: normal;
 }
 
-/* CSS 초기화 코드
+/** CSS 초기화 코드
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -145,27 +147,35 @@ table {
   border-spacing: 0;
 }
 
-/* 폰트 설정 */
-html,
-body {
-  font-family: "MaruBuri-Regular";
+/** Common Settings */
+p {
+  margin: 5px 0;
 }
 
-/*********/
-/* Color */
-/*********/
+/** Color */
 :root {
   --primary-color: #339af0;
   --primary-hover-color: #74c0fc;
   --secondary-color: #e64980;
   --secondary-hover-color: #f783ac;
+  --info-color: #22b8cf;
+  --success-color: #51cf66;
+  --warning-color: #fab005;
+  --danger-color: #f03e3e;
   --white-color: #ffffff;
   --gray-color1: #d9d9d9;
+  --defualt-color: #212529;
 }
 
-/**********/
-/* Button */
-/**********/
+/** 폰트 설정 */
+html,
+body {
+  font-family: "MaruBuri-Regular";
+  font-size: 16px;
+  color: var(--defualt-color);
+}
+
+/** Button */
 .btn {
   border: none;
   background-color: inherit;
@@ -251,4 +261,62 @@ body {
 }
 .btn-radius {
   border-radius: 18px;
+}
+
+/** Typhography */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.h1 {
+  font-size: 38px;
+}
+.h2 {
+  font-size: 30px;
+}
+.h3 {
+  font-size: 24px;
+}
+.h4 {
+  font-size: 20px;
+}
+.h5 {
+  font-size: 16px;
+}
+.h6 {
+  font-size: 14px;
+}
+.text-default {
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-success {
+  color: var(--success-color);
+}
+.text-info {
+  color: var(--info-color);
+}
+.text-warning {
+  color: var(--warning-color);
+}
+.text-danger {
+  color: var(--danger-color);
+}
+.text-thin {
+  font-weight: 100;
+}
+.text-regular {
+  font-weight: normal;
+}
+.text-bold {
+  font-weight: bold;
 }
