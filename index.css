@@ -404,3 +404,32 @@ body {
 .divide-dot {
   border-bottom: 1px dotted var(--gray-color1);
 }
+
+/** Card */
+.card {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid var(--gray-color1);
+  background-color: var(--white-color);
+}
+.card > .card-header,
+.card > .card-body,
+.card > .card-footer {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+}
+.card > .card-header {
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--gray-color1);
+}
+.card > .card-body {
+  line-height: 2em;
+}
+.card > .card-footer {
+  font-size: 14px;
+  border-top: 1px solid var(--gray-color1);
+}
