@@ -452,6 +452,7 @@ body {
   box-sizing: border-box;
   border-radius: 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
